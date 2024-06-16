@@ -1,0 +1,64 @@
+.home-screen{
+    /* background-color: antiquewhite; */
+    background-image: url('../assets/img/bg4.png');
+}
+
+.paragraf{
+    font-size: 16px;
+    text-align: justify;
+}
+
+/* Style the active class (and buttons on mouse-over) */
+.navbar{
+  color: black;
+  background-color: white;
+}
+
+.destinasi{
+    height: 500px;
+    overflow-y: scroll;
+}
+
+.card{
+    padding: 5px;
+}
+
+/* ===========================
+   Search Form Styles
+   =========================== */
+   .search-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -5px; /* Mengurangi margin atas untuk menempelkan form ke tab navigasi */
+    background: #fff;
+    border-radius: 10px 20px 10px 20px; /* Membuat sudut bulat dengan radius 20px di bawah */
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-left: auto; /* Menambahkan margin kiri otomatis */
+    margin-right: auto; /* Menambahkan margin kanan otomatis */
+    position: relative; /* Menambahkan posisi relatif untuk z-index */
+    z-index: 5; /* Menambahkan z-index lebih rendah dari tab navigasi */
+    height: 120px; /* Menambahkan ukuran tinggi */
+  }
+  
+  .search-form input,
+  .search-form button {
+    border: 2px solid #5C8FF3;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 0 5px;
+    font-size: 16px;
+  }
+  
+  .search-form button {
+    background: #fff;
+    color: #0057FF;
+    cursor: pointer;
+    transition: background 0.3s, color 0.3s;
+  }
+  
+  .search-form button:hover {
+    background: #0057FF;
+    color: #fff;
+  }

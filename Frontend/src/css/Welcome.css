@@ -1,0 +1,109 @@
+/* CSS untuk Welcome Screen */
+.welcome-screen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh; /* Mengisi seluruh tinggi viewport */
+  width: 100vw; /* Mengisi seluruh lebar viewport */
+  background: url('../assets/img/welcome/welcome.png') no-repeat center center fixed;
+  background-size: cover; /* Menutupi seluruh area elemen */
+  text-align: center;
+  color: white;
+  padding: 0; /* Menghilangkan padding */
+  border: none; /* Menghilangkan border */
+  margin: 0; /* Menghilangkan margin */
+  font-family: 'Gill Sans MT', sans-serif; /* Menetapkan font style untuk seluruh layar */
+}
+
+/* CSS untuk Judul */
+.welcome-h1 {
+  font-size: 50px;
+  margin-bottom: 10px; /* Mengurangi margin bawah */
+  color: black;
+  letter-spacing: -1px; /* Mengurangi jarak antar karakter */
+  font-family:  'Gill Sans MT', sans-serif;
+  font-weight: normal; /* Menerapkan gaya font normal */
+}
+
+/* CSS untuk Lingkaran */
+.circle {
+  background-color: black;
+  color: white;
+  border-radius: 50%; /* Membuat bentuk lingkaran */
+  padding: 5px 30px; /* Tambahkan padding horizontal untuk membuat lingkaran lebih besar */
+  display: inline-block;
+  font-family: 'Gill Sans MT', sans-serif; /* Menetapkan font style untuk lingkaran */
+  font-weight: normal; /* Menetapkan font style regular */
+  margin-left: 10px; /* Menambahkan jarak ke elemen sebelumnya */
+}
+
+/* CSS untuk Paragraf */
+p {
+  font-size: 30px;
+  margin-top: 6px; /* Menghilangkan margin atas */
+  font-family: 'Hanuman', serif; /* Menggunakan font Hanuman */
+  color: black;
+}
+
+/* CSS untuk Tombol */
+button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  color: black; /* Warna teks */
+  background-color: rgba(0, 0, 0, 0); /* Background transparan */
+  border: 2px solid black; /* Garis border putih dengan ketebalan 2px */
+  border-radius: 20px; /* Membulatkan sudut */
+  cursor: pointer; /* Tampilan cursor sebagai pointer */
+  width: 200px;
+  height: 50px;
+}
+
+/* CSS untuk Hover Tombol */
+button:hover {
+  background-color: rgb(0, 0, 0); /* Hitam dengan transparansi 70% saat di-hover */
+  color: white;
+}
+
+/* CSS untuk Responsif pada Layar Lebar */
+@media (max-width: 768px) {
+  .welcome-screen {
+    font-size: 90%; /* Mengurangi ukuran font secara umum */
+  }
+
+  h1 {
+    font-size: 48px; /* Mengurangi ukuran font untuk h1 */
+  }
+
+  p {
+    font-size: 24px; /* Mengurangi ukuran font untuk paragraf */
+  }
+
+  button {
+    width: 150px; /* Mengurangi lebar tombol */
+    height: 40px; /* Mengurangi tinggi tombol */
+    font-size: 0.8rem; /* Mengurangi ukuran font pada tombol */
+  }
+}
+
+/* CSS untuk Responsif pada Layar Kecil */
+@media (max-width: 480px) {
+  .welcome-screen {
+    font-size: 80%; /* Lebih kecil lagi untuk layar */
+  }
+
+  h1 {
+    font-size: 36px; /* Mengurangi ukuran font untuk h1 */
+  }
+
+  p {
+    font-size: 20px; /* Mengurangi ukuran font untuk paragraf */
+  }
+
+  button {
+    width: 120px; /* Mengurangi lebar tombol */
+    height: 35px; /* Mengurangi tinggi tombol */
+    font-size: 0.7rem; /* Mengurangi ukuran font pada tombol */
+  }
+}

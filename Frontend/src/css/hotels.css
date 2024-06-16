@@ -1,0 +1,317 @@
+/* ===========================
+   Home Screen Styles
+   =========================== */
+*{
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.home-screen {
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background: linear-gradient(to right, #5c8ff3, #0057ff);
+  border-radius: 0 0 12px 12px;
+}
+
+.logo span {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.nav-bar a {
+  text-decoration: none;
+  color: #fff;
+  margin: 0 10px;
+  padding: 10px;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+.nav-bar a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* ===========================
+   Tab Navigation Styles
+   =========================== */
+.tab-navigation {
+  display: flex;
+  /* Mengatur tampilan menjadi flex */
+  justify-content: center;
+  /* Menengahkan konten secara horizontal */
+  align-items: center;
+  /* Menengahkan konten secara vertikal */
+  margin-top: 30px;
+  /* Memberikan margin atas 30px */
+  margin-bottom: -15px;
+  /* Menghilangkan margin bawah */
+  background: linear-gradient(to right, #5C8FF3, #0057FF);
+  border-radius: 30px 30px 30px 30px;
+  /* Membuat sudut bulat dengan radius 30px di atas */
+  padding: 5px;
+  /* Memberikan padding sebesar 5px */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  /* Memberikan bayangan pada kotak */
+  width: 80%;
+  /* Mengatur lebar menjadi 80% */
+  margin-left: auto;
+  /* Menambahkan margin kiri otomatis */
+  margin-right: auto;
+  /* Menambahkan margin kanan otomatis */
+  position: relative;
+  /* Menambahkan posisi relatif untuk z-index */
+  z-index: 10;
+  /* Menambahkan z-index untuk memastikan tab di atas */
+}
+
+.tab-navigation a {
+  text-decoration: none;
+  /* Menghilangkan dekorasi teks */
+  color: white;
+  /* Warna teks hitam */
+  padding: 10px 50px;
+  /* Memberikan padding vertikal 10px dan horizontal 20px */
+  border-radius: 20px;
+  /* Membuat sudut bulat dengan radius 20px */
+  margin: 0 20px;
+  /* Memberikan margin horizontal 5px */
+  transition: background 0.3s, color 0.3s;
+  /* Transisi warna latar dan teks selama 0.3 detik */
+}
+
+.tab-navigation a:hover {
+  background: #fff;
+  /* Warna latar belakang putih saat hover */
+  color: black;
+  /* Warna teks biru tua saat hover */
+}
+
+
+
+
+.search-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.search-form .form-control {
+  margin-right: 10px;
+}
+
+.filter-section {
+  background: #f8f9fa;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  color: black;
+}
+
+/* .filter-section .price {
+  } */
+
+.filter-section h4 {
+  margin-bottom: 10px;
+}
+
+.filter-section .form-range {
+  width: 100%;
+}
+
+.hotel-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.hotel-card {
+  border: none;
+}
+
+
+/* .hotel-card .card-title {
+    padding-bottom: 1px;
+  } */
+
+.hotel-card .kota-text {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+p{
+  font-size: 16px;
+}
+
+.paragraf {
+  font-size: 16px;
+  text-align: right;
+}
+
+
+.hotel-card .room-info {
+  margin-left:2px;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 10px;
+  display: flex;
+}
+
+.hotel-card .room-info .left {
+  text-align: left;
+}
+
+.hotel-card .room-info .left .red {
+  color: rgb(192, 19, 19);
+}
+
+.hotel-card .room-info .right {
+  text-align: right;
+  align-items: right;
+}
+
+.hotel-card .image-content {
+  flex: 0 0 300px;
+  /* Mengatur lebar gambar */
+  margin-left: 20px;
+  /* Memberikan jarak antara gambar dan teks */
+  border: 5px solid white;
+  /* Menambahkan bingkai putih */
+}
+
+.hotel-card img {
+  margin-left: 5px;
+  margin-top: 5px;
+  /* align-items: center; */
+}
+
+.hotel-card .image-content img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.hotel-card .card-text {
+  padding-left: 5px;
+}
+
+.hotel-card .btn-secondary {
+  background: linear-gradient(to right, black, black);
+  border: none;
+  border-radius: 10px;
+  /* padding: 10px; */
+}
+
+.hotel-card .btn-danger {
+  background: linear-gradient(to right, rgb(192, 19, 19), rgb(221, 171, 171));
+  border: none;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+/* .hotel-card .room-info .left {
+    color: red;
+  } */
+
+
+/* ===========================
+     Destination Section Styles
+     =========================== */
+.destination-section {
+  display: flex;
+  /* Mengatur tampilan menjadi flex */
+  justify-content: space-between;
+  /* Menyebarkan konten secara horizontal */
+  align-items: center;
+  /* Menengahkan konten secara vertikal */
+  margin-top: 40px;
+  text-align: left;
+  background: #f8f9fa;
+  /* Meningkatkan transparansi */
+  padding: 20px;
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  transform: translateX(-50%);
+  font-size: 38px;
+  font-weight: normal;
+  box-sizing: border-box;
+  /* Memastikan padding dan border termasuk dalam lebar dan tinggi */
+  z-index: 3;
+  /* Menyesuaikan z-index agar lebih tinggi dari bordered-div dan elemen lain */
+  border-radius: 0 0 12px 12px;
+  /* Menambahkan radius hanya di sudut bawah kiri dan kanan */
+  border: 2px solid white;
+}
+
+.destination-section .text-content {
+  flex: 1;
+  /* Mengatur teks untuk mengambil ruang yang tersedia */
+  margin-right: 20px;
+  /* Memberikan jarak antara teks dan gambar */
+}
+
+.destination-section h2 {
+  color: black;
+  font-family: hanuman;
+  font-weight: bold;
+  margin-left: 80px;
+}
+
+.destination-section .judul {
+  margin-left: 80px;
+  font-size: 25px;
+  color: darkgrey;
+  font-family: hanuman;
+  margin-top: -10px;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Humanist777CondensedBT";
+  src: url("../assets/font/Humanist777CondensedBT.ttf") format("truetype");
+}
+
+.destination-section h3 {
+  margin-left: 80px;
+  margin-top: 50px;
+  color: #fff;
+  /* Mengatur warna teks menjadi putih */
+  font-family: "Humanist777CondensedBT", sans-serif;
+  /* Menggunakan font Humanist777CondensedBT */
+  font-weight: bold;
+  font-size: 63px;
+}
+
+.destination-section .paragraf {
+  margin-left: 80px;
+  font-size: 23px;
+  color: black;
+  font-family: "Inter";
+  /* Memastikan font family ditulis dengan benar */
+  margin-top: -10px;
+}
+
+.destination-section .image-content {
+  flex: 0 0 300px;
+  /* Mengatur lebar gambar */
+  margin-left: 20px;
+  /* Memberikan jarak antara gambar dan teks */
+  border: 5px solid white;
+  /* Menambahkan bingkai putih */
+}
+
+.destination-section .image-content img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
